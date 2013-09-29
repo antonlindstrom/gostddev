@@ -6,9 +6,13 @@ It is meant to be simple and easy to read, hopefully it is.
 
 ## Usage
 
-    import "github.com/antonlindstrom/gostddev"
+    import (
+        "fmt"
+        "github.com/antonlindstrom/gostddev"
+    )
 
     func MyStdDev() {
         set := float64{1,2,3,4,5}
-        gostddev.StdDev(set)
+        fmt.Printf("%f\n", gostddev.StdDev(set))
+        // Prints 1.41421
     }
