@@ -13,14 +13,14 @@ func Sum(a []float64) (sum float64) {
 	return
 }
 
-func DiffSqrtMean(a []float64) (set []float64) {
-	set = make([]float64, len(a))
+func DiffSqrtMean(a []float64) []float64 {
+	set := make([]float64, len(a))
 	meanVal := Mean(a)
 
 	for i, v := range a {
 		set[i] = math.Pow(v-meanVal, 2)
 	}
-	return
+	return set
 }
 
 func StdDev(a []float64) float64 {
