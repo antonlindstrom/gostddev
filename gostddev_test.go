@@ -25,3 +25,10 @@ func TestStdDev(t *testing.T) {
 		t.Error("expected 1.4142135623730951 from set 1,2,3,4,5")
 	}
 }
+
+func BenchmarkStdDev(b *testing.B) {
+
+	for i := 0; i < b.N; i++ {
+		StdDev([]float64{1, 2, 3, 4, 5})
+	}
+}
