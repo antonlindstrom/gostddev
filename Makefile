@@ -1,6 +1,6 @@
 all:
 	@mkdir -p bin/
-	@go build -o bin/go-stddev go-stddev.go
+	@go build -o bin/gostddev gostddev.go
 
 get-deps:
 	@go get -d -v ./...
