@@ -18,8 +18,8 @@ func DiffSqrtMean(a []float64) []float64 {
 	meanVal := Mean(a)
 	var d float64
 	for i, v := range a {
-		d = v-meanVal
-		set[i] = d*d
+		d = v - meanVal
+		set[i] = d * d
 	}
 	return set
 }
