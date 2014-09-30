@@ -16,9 +16,10 @@ func Sum(a []float64) (sum float64) {
 func DiffSqrtMean(a []float64) []float64 {
 	set := make([]float64, len(a))
 	meanVal := Mean(a)
-
+	var d float64
 	for i, v := range a {
-		set[i] = math.Pow(v-meanVal, 2)
+		d = v-meanVal
+		set[i] = d*d
 	}
 	return set
 }
