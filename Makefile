@@ -5,6 +5,9 @@ all:
 get-deps:
 	@go get -d -v ./...
 
+format:
+	@go fmt ./...
+
 test:
 	@go test ./...
 
